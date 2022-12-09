@@ -1,19 +1,16 @@
 package org.example;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class TesteListagem {
 
     public static void main(String[] args) throws SQLException {
 
         CriaConexao criaConexao = new CriaConexao();
-        Connection con = criaConexao.recuperarConexao();
+        Connection connection = criaConexao.recuperarConexao();
 
-        Statement stm = con.createStatement();
-        stm.execute("SELECT ID, NOME, DESCRICAO FROM produto");
+        PreparedStatement stm = connection.prepareStatement("SELECT ID, NOME, DESCRICAO FROM produto");
+        stm.execute();
 
         ResultSet rst = stm.getResultSet();
 
@@ -25,7 +22,7 @@ public class TesteListagem {
             System.out.println(descricao);
         }
 
-        con.close();
+        connection.close();
     }
 
 }

@@ -9,6 +9,6 @@ public class CriaConexao {
     public Connection recuperarConexao() throws SQLException {
         return DriverManager
                 .getConnection("jdbc:mysql://localhost/loja_virtual?useTimezone=true&serverTimezone=UTC",
-                        "root", "root");
+                        "root", "shaRe95$");
     }
 }
