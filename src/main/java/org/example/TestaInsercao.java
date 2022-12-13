@@ -9,7 +9,7 @@ public class TestaInsercao {
 
     public static void main(String[] args) throws SQLException  {
 
-        CriaConexao factory = new CriaConexao();
+        ConnectionFactory factory = new ConnectionFactory();
         Connection connection = factory.recuperarConexao();
 
         Statement stm = connection.createStatement();

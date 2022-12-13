@@ -1,0 +1,6 @@
+org/example/TesteListagem.class
+org/example/TestaRemocao.class
+org/example/TestaConexao.class
+org/example/ConnectionFactory.class
+org/example/TestaInsercaoComParametro.class
+org/example/TestaInsercao.class

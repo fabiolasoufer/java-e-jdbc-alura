@@ -5,7 +5,7 @@ import java.sql.*;
 public class TestaInsercaoComParametro {
 
     public static void main(String[] args) throws SQLException {
-        CriaConexao factory = new CriaConexao();
+        ConnectionFactory factory = new ConnectionFactory();
         try (Connection connection = factory.recuperarConexao()) {
 
             connection.setAutoCommit(false);

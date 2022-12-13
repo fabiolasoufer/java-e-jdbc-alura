@@ -8,7 +8,7 @@ public class TestaRemocao {
 
     public static void main(String[] args) throws SQLException {
 
-        CriaConexao factory = new CriaConexao();
+        ConnectionFactory factory = new ConnectionFactory();
         Connection connection = factory.recuperarConexao();
 
         PreparedStatement stm = connection.prepareStatement("DELETE FROM produto WHERE ID > ?");

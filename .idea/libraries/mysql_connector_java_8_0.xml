@@ -2,6 +2,8 @@
   <library name="mysql-connector-java-8.0">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/../mysql-connector-java-8.0.17(1)" />
+      <root url="jar://$PROJECT_DIR$/../c3p0-JARs/c3p0-0.9.5.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../c3p0-JARs/mchange-commons-java-0.2.16.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
